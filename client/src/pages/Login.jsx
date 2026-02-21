@@ -49,7 +49,6 @@ export default function Login() {
         <div className="row justify-content-center">
           <div className="col-md-6 col-lg-5">
             <div className="card shadow-lg border-0 rounded-4 overflow-hidden">
-              {/* Верхний градиент */}
               <div
                 style={{
                   height: "8px",
@@ -62,7 +61,6 @@ export default function Login() {
                 className="card-body p-5"
                 style={{ backgroundColor: "#f8f9fa" }}
               >
-                {/* Логотип с иконкой растяжки */}
                 <div className="text-center mb-4">
                   <div
                     className="d-inline-block p-3 rounded-3 mb-3"
@@ -88,7 +86,6 @@ export default function Login() {
                 </div>
 
                 <form onSubmit={handleSubmit} autoComplete="off">
-                  {/* Email */}
                   <div className="mb-4">
                     <label
                       className="form-label fw-semibold"
@@ -124,7 +121,6 @@ export default function Login() {
                     </div>
                   </div>
 
-                  {/* Пароль с глазком */}
                   <div className="mb-4">
                     <label
                       className="form-label fw-semibold"

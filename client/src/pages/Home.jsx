@@ -9,7 +9,6 @@ export default function Home() {
     <>
       <ProtectedContent>
         <div className="container mt-4">
-          {/* Приветственный баннер с умным приветствием */}
           <div className="row mb-4">
             <div className="col-12">
               <div className="card border-0 rounded-4 overflow-hidden">
@@ -45,7 +44,6 @@ export default function Home() {
                       </div>
                       <div>
                         <h1 className="h2 mb-1" style={{ color: "#007086" }}>
-                          {/* УМНОЕ ПРИВЕТСТВИЕ */}
                           {(() => {
                             const hour = new Date().getHours();
                             if (hour >= 5 && hour < 12) {
@@ -79,7 +77,6 @@ export default function Home() {
             </div>
           </div>
 
-          {/* СТАТИСТИКА */}
           <div className="row mb-4">
             <div className="col-md-4 mb-3">
               <div className="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
@@ -160,8 +157,6 @@ export default function Home() {
             </div>
           </div>
 
-          {/* БЫСТРЫЕ ДЕЙСТВИЯ */}
-          {/* Быстрые действия */}
           <div className="row">
             <div className="col-12">
               <div className="card border-0 shadow-sm rounded-4 overflow-hidden">
@@ -240,7 +235,6 @@ export default function Home() {
                           e.target.style.boxShadow = "none";
                         }}
                       >
-                        {/* ИСПРАВЛЕНО: bi-stopwatch → bi-scale */}
                         <i className="bi bi-file-earmark-text d-block fs-4 mb-2"></i>
                         Записать вес
                       </button>
@@ -272,7 +266,6 @@ export default function Home() {
             </div>
           </div>
 
-          {/* ИНФОРМАЦИОННАЯ КАРТОЧКА */}
           <div className="row mt-4">
             <div className="col-12">
               <div

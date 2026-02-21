@@ -1,7 +1,6 @@
 import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 
-// Компонент иконки - ВНЕ основного компонента
 const StretchingIcon = () => (
   <svg
     width="28"
@@ -32,7 +31,6 @@ export default function Navbar() {
       }}
     >
       <div className="container">
-        {/* Логотип */}
         <Link className="navbar-brand d-flex align-items-center" to="/">
           <div
             className="me-2 d-flex align-items-center justify-content-center"
@@ -62,7 +60,6 @@ export default function Navbar() {
           <ul className="navbar-nav ms-auto align-items-center">
             {user ? (
               <>
-                {/* Иконка пользователя */}
                 <li className="nav-item me-3">
                   <span className="nav-link text-white d-flex align-items-center gap-2">
                     <div style={{ color: "#f56800" }}>
@@ -72,7 +69,6 @@ export default function Navbar() {
                   </span>
                 </li>
 
-                {/* Кнопка выхода */}
                 <li className="nav-item">
                   <button
                     className="btn px-4 py-2 border-0 rounded-pill fw-semibold text-white"
@@ -97,7 +93,6 @@ export default function Navbar() {
               </>
             ) : (
               <>
-                {/* Кнопка ВХОД */}
                 <li className="nav-item">
                   <Link
                     to="/login"
@@ -123,7 +118,6 @@ export default function Navbar() {
                   </Link>
                 </li>
 
-                {/* Кнопка РЕГИСТРАЦИЯ */}
                 <li className="nav-item ms-2">
                   <Link
                     to="/register"

@@ -20,7 +20,6 @@ export const AuthProvider = ({ children }) => {
     type: "success",
   });
 
-  // Проверяем, есть ли сохраненный токен при загрузке
   useEffect(() => {
     const token = localStorage.getItem("token");
     if (token) {
