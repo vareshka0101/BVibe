@@ -173,13 +173,10 @@ export default function Home() {
                   }}
                 />
                 <div className="card-body p-4">
-                  <h5 className="mb-4 fw-semibold" style={{ color: "#007086" }}>
-                    <i
-                      className="bi bi-stars me-2"
-                      style={{ color: "#f56800" }}
-                    ></i>
-                    Быстрые действия
-                  </h5>
+                  <h5
+                    className="mb-4 fw-semibold"
+                    style={{ color: "#007086" }}
+                  ></h5>
                   <div className="row g-3">
                     <div className="col-sm-6 col-md-3">
                       <button
@@ -252,19 +249,17 @@ export default function Home() {
                       <button
                         className="btn w-100 py-3 border-0 rounded-3 fw-semibold"
                         style={{
-                          background: "white",
+                          background: "#66b3cc",
                           color: "#007086",
                           border: "2px solid #66b3cc",
                         }}
                         onMouseEnter={(e) => {
                           e.target.style.background = "#66b3cc";
                           e.target.style.color = "white";
-                          e.target.style.transform = "scale(1.05)";
                         }}
                         onMouseLeave={(e) => {
                           e.target.style.background = "white";
                           e.target.style.color = "#007086";
-                          e.target.style.transform = "scale(1)";
                         }}
                       >
                         <i className="bi bi-list-check d-block fs-4 mb-2"></i>
@@ -283,7 +278,7 @@ export default function Home() {
               <div
                 className="card border-0 rounded-4"
                 style={{
-                  background: "linear-gradient(135deg, #f8f9fa, #ffffff)",
+                  background: "linear-gradient(135deg,  #66b3cc, #0189a4)",
                   border: "1px solid #66b3cc",
                 }}
               >
@@ -296,10 +291,10 @@ export default function Home() {
                   >
                     <i className="bi bi-heart-fill text-white fs-3"></i>
                   </div>
-                  <h4 style={{ color: "#007086" }}>
+                  <h4 style={{ color: "#b7e4f3" }}>
                     Твой путь к здоровью начинается здесь
                   </h4>
-                  <p className="mb-0" style={{ color: "#66b3cc" }}>
+                  <p className="mb-0" style={{ color: "#aae3f6" }}>
                     Каждая тренировка, каждый приём пищи - это шаг к лучшей
                     версии себя. Мы рядом, чтобы поддержать тебя на этом пути!
                   </p>
