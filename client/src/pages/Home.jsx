@@ -9,7 +9,7 @@ export default function Home() {
     <>
       <ProtectedContent>
         <div className="container mt-4">
-          {/* Приветственный баннер с градиентом */}
+          {/* Приветственный баннер с умным приветствием */}
           <div className="row mb-4">
             <div className="col-12">
               <div className="card border-0 rounded-4 overflow-hidden">
@@ -45,7 +45,19 @@ export default function Home() {
                       </div>
                       <div>
                         <h1 className="h2 mb-1" style={{ color: "#007086" }}>
-                          С добрым утром, {user?.name}!
+                          {/* УМНОЕ ПРИВЕТСТВИЕ */}
+                          {(() => {
+                            const hour = new Date().getHours();
+                            if (hour >= 5 && hour < 12) {
+                              return <> С добрым утром, {user?.name}!</>;
+                            } else if (hour >= 12 && hour < 18) {
+                              return <> Добрый день, {user?.name}!</>;
+                            } else if (hour >= 18 && hour < 23) {
+                              return <> Добрый вечер, {user?.name}!</>;
+                            } else {
+                              return <> Доброй ночи, {user?.name}!</>;
+                            }
+                          })()}
                         </h1>
                         <p className="mb-0" style={{ color: "#66b3cc" }}>
                           <i
@@ -67,7 +79,7 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Статистика */}
+          {/* СТАТИСТИКА */}
           <div className="row mb-4">
             <div className="col-md-4 mb-3">
               <div className="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
@@ -142,12 +154,13 @@ export default function Home() {
                   <p className="display-6 fw-bold" style={{ color: "#ed014b" }}>
                     0%
                   </p>
-                  <p className="text-muted small">К цели</p>
+                  <p className="text-muted small">Выполнено</p>
                 </div>
               </div>
             </div>
           </div>
 
+          {/* БЫСТРЫЕ ДЕЙСТВИЯ */}
           {/* Быстрые действия */}
           <div className="row">
             <div className="col-12">
@@ -230,7 +243,8 @@ export default function Home() {
                           e.target.style.boxShadow = "none";
                         }}
                       >
-                        <i className="bi bi-scissors d-block fs-4 mb-2"></i>
+                        {/* ИСПРАВЛЕНО: bi-stopwatch → bi-scale */}
+                        <i className="bi bi-file-earmark-text d-block fs-4 mb-2"></i>
                         Записать вес
                       </button>
                     </div>
@@ -263,7 +277,7 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Информационная карточка */}
+          {/* ИНФОРМАЦИОННАЯ КАРТОЧКА */}
           <div className="row mt-4">
             <div className="col-12">
               <div

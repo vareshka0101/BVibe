@@ -82,7 +82,7 @@ export default function Login() {
                     </svg>
                   </div>
                   <h2 className="fw-bold" style={{ color: "#007086" }}>
-                    С возвращением!
+                    Вперед к результатам!
                   </h2>
                   <p style={{ color: "#66b3cc" }}>Войдите в свой аккаунт</p>
                 </div>
